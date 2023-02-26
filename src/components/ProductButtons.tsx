@@ -11,7 +11,6 @@ export interface Props {
 
 export const ProductButtons = ({ className, style }:Props ) => {
     
-    // TODO: exponer el maxCount
     const { counter, increaseBy, maxCount } = useContext( ProductContext );
 
     const isMaxReached = useCallback( 
